@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Sign up</title>
+
+<style type="text/css">
+html {
+   height: 90%;
+}
+
+body {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   background: #231f20;
+   font-family: "Helvetica Neue", Helvetica, Arials, sans;
+}
+
+#regbox {
+   width: 400px;
+   height: 530px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.item-group {
+   width: 100%;
+}
+
+.input-item-center {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.button-item-center {
+   display: flex;
+   justify-content: center;
+}
+
+.button-item-center input {
+   margin-left : 10px;
+}
+
+input[type="text"]{
+   display: inline-block;
+   background: transparent;
+   font-weight: 100;
+   font-style: normal;
+   font-size: 1rem;
+   letter-spacing: 0.3em;
+   color: rgba(223, 190, 106, 0.7);
+   border-radius: 0;
+   transition: all 0.7s ease-out;
+   background: linear-gradient(270deg, rgba(223, 190, 106, 0.8),
+      rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+   background-position: 1% 50%;
+   background-size: 300% 300%;
+   text-decoration: none;
+}
+input[type="password"]{
+   display: inline-block;
+   background: transparent;
+   font-weight: 100;
+   font-style: normal;
+   font-size: 1rem;
+   letter-spacing: 0.3em;
+   color: rgba(223, 190, 106, 0.7);
+   border-radius: 0;
+   transition: all 0.7s ease-out;
+   background: linear-gradient(270deg, rgba(223, 190, 106, 0.8),
+      rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+   background-position: 1% 50%;
+   background-size: 300% 300%;
+   text-decoration: none;
+}
+/* 
+.aaa {
+   display: inline-block;
+   background: transparent;
+   text-transform: uppercase;
+   font-weight: 100;
+   font-style: normal;
+   font-size: 1rem;
+   letter-spacing: 0.3em;
+   color: rgba(223, 190, 106, 0.7);
+   border-radius: 0;
+   padding: 4px 4px 4px;
+   transition: all 0.7s ease-out;
+   background: linear-gradient(270deg, rgba(223, 190, 106, 0.8),
+      rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+   background-position: 1% 50%;
+   background-size: 300% 300%;
+   text-decoration: none;
+   margin: 20px 10px;
+}
+
+.btn {
+   display: inline-block;
+   background: transparent;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 1rem;
+   letter-spacing: 0.3em;
+   color: rgba(223, 190, 106, 0.7);
+   border-radius: 0;
+   padding: 18px 80px 20px;
+   transition: all 0.7s ease-out;
+   background: linear-gradient(270deg, rgba(223, 190, 106, 0.8),
+      rgba(146, 111, 52, 0.8), rgba(34, 34, 34, 0), rgba(34, 34, 34, 0));
+   background-position: 1% 50%;
+   background-size: 300% 300%;
+   text-decoration: none;
+   margin: 2rem 1rem;
+   border: none;
+   border: 1px solid rgba(223, 190, 106, 0.3);
+}
+
+.btn:hover {
+   color: #fff;
+   border: 1px solid rgba(223, 190, 106, 0);
+   color: white;
+   background-position: 99% 50%;
+} */
+
+</style>
+
+</head>
+
+<body>
+
+   <!-- <form method="get" action="abc"> -->
+   <form method="get" action="abc">
+
+      <fieldset id="regbox">
+
+         <legend>회원가입</legend>
+
+         <div class="item-group">
+   
+            <div class="input-item-center">
+               <label for="id">아이디</label> 
+               <input type="text" name="id" /><br />
+            </div>
+   
+            <div class="input-item-center">
+               <label for="pw">비밀번호</label> 
+               <input type="password" name="pw" /><br />
+            </div>
+   
+            <div class="input-item-center">
+               <label for="email">이름</label> 
+               <input type="text" name="name" /><br />
+            </div>
+   
+            <div class="input-item-center">
+               <label for="email">닉네임</label> 
+               <input type="text" name="nick" /><br />
+            </div>
+            <div class="input-item-center">
+               <label for="email">이메일</label> 
+               <input type="text" name="email" /><br />
+            </div>
+            <div class="input-item-center">
+               <label for="phone">전화번호</label> 
+               <input type="text" name="phone" /><br />
+            </div>
+            <div class="button-item-center">
+               <input class="btn" type="submit" value="가입">
+               <input class="btn" type="reset" value="초기화" />
+               <input class="btn" type="button" onclick="goMainPage()" value="돌아가기" />
+               <script>
+                  function goMainPage() {
+                     location.href='main.html';
+                  }
+               </script>
+            </div>
+         </div>
+      </fieldset>
+
+   </form>
+
+</body>
+
+</html>
