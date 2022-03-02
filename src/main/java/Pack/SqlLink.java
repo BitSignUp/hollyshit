@@ -7,8 +7,9 @@ public class SqlLink  {
    static Connection conn = null;
    static Statement stat = null;
    PreparedStatement pstmt = null;
-   String url  = "jdbc:mysql://localhost:3306/world";
-   String dbId = "root";
+//   String url  = "jdbc:mysql://localhost:3306/world";
+   String url  = "jdbc:mysql://15.164.217.65:3306/world";
+   String dbId = "cheetah";
    String dbPw = "1234";
 
    SqlLink() {
